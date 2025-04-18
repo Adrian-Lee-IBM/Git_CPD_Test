@@ -1,0 +1,3111 @@
+{
+  "primary_pipeline" : "17ec76f6-8dc0-479c-98df-4416c8f673ae",
+  "pipelines" : [ {
+    "nodes" : [ {
+      "outputs" : [ {
+        "id" : "044c44d4-9deb-489d-99eb-a6cc2f4cf9cf",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "49193182-761e-403b-b184-806572fb572c"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 1
+            }
+          }
+        },
+        "schema_ref" : "42dfd669-23a9-4fc9-a05b-95d43c90ebcb",
+        "parameters" : {
+          "buf_mode" : "default"
+        }
+      } ],
+      "op" : "salesforce",
+      "connection" : {
+        "ref" : "a922eb43-cdff-47c0-8ffb-a05f8686923c",
+        "fileData" : {
+          "op" : "existing-asset",
+          "fileName" : "",
+          "stageName" : "salesforce"
+        },
+        "connData" : {
+          "op" : "existing-asset",
+          "stageName" : "salesforce",
+          "connectionName" : "SF Test"
+        },
+        "properties" : {
+          "outputName" : "Link_1",
+          "read_mode" : "general",
+          "valueDerivation" : [ ],
+          "stageDescription" : "",
+          "schema_name" : "SFORCE",
+          "table_name" : "ACCOUNT",
+          "url" : ""
+        },
+        "name" : "SF Test"
+      },
+      "id" : "21bc464f-4ff6-4b09-aad2-e4b2666cb62c",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/salesforce.svg",
+          "x_pos" : 506.88,
+          "label" : "ACCOUNT_1",
+          "y_pos" : 253.44
+        }
+      },
+      "parameters" : {
+        "output_count" : 1,
+        "input_count" : 0,
+        "execmode" : "default_par",
+        "outputcolProperties" : [ {
+          "ColumnName" : "ID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "VARCHAR(18)",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "ISDELETED",
+          "Description" : " ",
+          "Length" : 1,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "BIT",
+          "DataType" : "BIT",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "MASTERRECORDID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(18), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "NAME",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "VARCHAR(255)",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "TYPE",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "PARENTID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(18), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGSTREET",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGCITY",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGSTATE",
+          "Description" : " ",
+          "Length" : 80,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(80), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGPOSTALCODE",
+          "Description" : " ",
+          "Length" : 20,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(20), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGCOUNTRY",
+          "Description" : " ",
+          "Length" : 80,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(80), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGLATITUDE",
+          "Description" : " ",
+          "Length" : 15,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "DOUBLE, Null",
+          "DataType" : "DOUBLE",
+          "Scale" : 15,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGLONGITUDE",
+          "Description" : " ",
+          "Length" : 15,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "DOUBLE, Null",
+          "DataType" : "DOUBLE",
+          "Scale" : 15,
+          "Key" : false
+        }, {
+          "ColumnName" : "BILLINGGEOCODEACCURACY",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGSTREET",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGCITY",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGSTATE",
+          "Description" : " ",
+          "Length" : 80,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(80), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGPOSTALCODE",
+          "Description" : " ",
+          "Length" : 20,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(20), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGCOUNTRY",
+          "Description" : " ",
+          "Length" : 80,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(80), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGLATITUDE",
+          "Description" : " ",
+          "Length" : 15,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "DOUBLE, Null",
+          "DataType" : "DOUBLE",
+          "Scale" : 15,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGLONGITUDE",
+          "Description" : " ",
+          "Length" : 15,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "DOUBLE, Null",
+          "DataType" : "DOUBLE",
+          "Scale" : 15,
+          "Key" : false
+        }, {
+          "ColumnName" : "SHIPPINGGEOCODEACCURACY",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "PHONE",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "FAX",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "ACCOUNTNUMBER",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "WEBSITE",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "PHOTOURL",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SIC",
+          "Description" : " ",
+          "Length" : 20,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(20), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "INDUSTRY",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "ANNUALREVENUE",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "DECIMAL(18), Null",
+          "DataType" : "DECIMAL",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "NUMBEROFEMPLOYEES",
+          "Description" : " ",
+          "Length" : 9,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "INTEGER, Null",
+          "DataType" : "INTEGER",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "OWNERSHIP",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "TICKERSYMBOL",
+          "Description" : " ",
+          "Length" : 20,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(20), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "DESCRIPTION",
+          "Description" : " ",
+          "Length" : 32000,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "LONGVARCHAR(32000), Null",
+          "DataType" : "LONGVARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "RATING",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SITE",
+          "Description" : " ",
+          "Length" : 80,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(80), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "OWNERID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "VARCHAR(18)",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "CREATEDDATE",
+          "Description" : " ",
+          "Length" : 19,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "TIMESTAMP(19)",
+          "DataType" : "TIMESTAMP",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "CREATEDBYID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "VARCHAR(18)",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "LASTMODIFIEDDATE",
+          "Description" : " ",
+          "Length" : 19,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "TIMESTAMP(19)",
+          "DataType" : "TIMESTAMP",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "LASTMODIFIEDBYID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "VARCHAR(18)",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SYSTEMMODSTAMP",
+          "Description" : " ",
+          "Length" : 19,
+          "Signed" : false,
+          "Nullable_check" : false,
+          "Metadata" : "TIMESTAMP(19)",
+          "DataType" : "TIMESTAMP",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "LASTACTIVITYDATE",
+          "Description" : " ",
+          "Length" : 10,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "DATE, Null",
+          "DataType" : "DATE",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "LASTVIEWEDDATE",
+          "Description" : " ",
+          "Length" : 19,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "TIMESTAMP(19), Null",
+          "DataType" : "TIMESTAMP",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "LASTREFERENCEDDATE",
+          "Description" : " ",
+          "Length" : 19,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "TIMESTAMP(19), Null",
+          "DataType" : "TIMESTAMP",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "JIGSAW",
+          "Description" : " ",
+          "Length" : 20,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(20), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "JIGSAWCOMPANYID",
+          "Description" : " ",
+          "Length" : 20,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(20), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "CLEANSTATUS",
+          "Description" : " ",
+          "Length" : 40,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(40), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "ACCOUNTSOURCE",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "DUNSNUMBER",
+          "Description" : " ",
+          "Length" : 9,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(9), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "TRADESTYLE",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "NAICSCODE",
+          "Description" : " ",
+          "Length" : 8,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(8), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "NAICSDESC",
+          "Description" : " ",
+          "Length" : 120,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(120), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "YEARSTARTED",
+          "Description" : " ",
+          "Length" : 4,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(4), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SICDESC",
+          "Description" : " ",
+          "Length" : 80,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(80), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "DANDBCOMPANYID",
+          "Description" : " ",
+          "Length" : 18,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(18), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "CUSTOMERPRIORITY",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SLA",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "ACTIVE",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "NUMBEROFLOCATIONS",
+          "Description" : " ",
+          "Length" : 9,
+          "Signed" : true,
+          "Nullable_check" : true,
+          "Metadata" : "INTEGER, Null",
+          "DataType" : "INTEGER",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "UPSELLOPPORTUNITY",
+          "Description" : " ",
+          "Length" : 255,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(255), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SLASERIALNUMBER",
+          "Description" : " ",
+          "Length" : 10,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(10), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SLAEXPIRATIONDATE",
+          "Description" : " ",
+          "Length" : 10,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "DATE, Null",
+          "DataType" : "DATE",
+          "Scale" : 0,
+          "Key" : false
+        }, {
+          "ColumnName" : "SEGMENT",
+          "Description" : " ",
+          "Length" : 25,
+          "Signed" : false,
+          "Nullable_check" : true,
+          "Metadata" : "VARCHAR(25), Null",
+          "DataType" : "VARCHAR",
+          "Scale" : 0,
+          "Key" : false
+        } ]
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 1
+            }
+          }
+        }
+      } ],
+      "op" : "PxSequentialFile",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "21bc464f-4ff6-4b09-aad2-e4b2666cb62c",
+          "type_attr" : "PRIMARY",
+          "id" : "49193182-761e-403b-b184-806572fb572c",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ {
+                "image" : "/data-intg/flows/graphics/flows/link-output-handle--default-selected.svg",
+                "temporary" : false,
+                "outline" : false,
+                "distance" : 0,
+                "x_pos" : -10,
+                "id" : "dec-3",
+                "position" : "source",
+                "y_pos" : -10,
+                "class_name" : "linkStartImage"
+              }, {
+                "image" : "/data-intg/flows/graphics/flows/link-marking--collection.svg",
+                "temporary" : false,
+                "outline" : false,
+                "distance" : 0,
+                "width" : 50,
+                "tooltip" : "Collection",
+                "x_pos" : -15,
+                "id" : "dec-9M",
+                "position" : "middle",
+                "y_pos" : 4,
+                "height" : 50
+              }, {
+                "temporary" : false,
+                "label_allow_return_key" : "save",
+                "label_single_line" : true,
+                "width" : 100,
+                "label_editable" : true,
+                "x_pos" : -18,
+                "id" : "dec-8",
+                "position" : "middle",
+                "label" : "Link_1",
+                "y_pos" : -20,
+                "height" : 80
+              } ],
+              "class_name" : "linkStyle__runMetricsLinkDefaultStyle___ixW31"
+            }
+          },
+          "link_name" : "Link_1",
+          "port_id_ref" : "044c44d4-9deb-489d-99eb-a6cc2f4cf9cf"
+        } ],
+        "id" : "5dd2be0e-15f7-4f85-bea7-cf26e07fe564",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 1
+            }
+          }
+        },
+        "schema_ref" : "42dfd669-23a9-4fc9-a05b-95d43c90ebcb",
+        "parameters" : {
+          "final_delim" : "end",
+          "showPartType" : false,
+          "null_field_sep_flag" : false,
+          "null_field" : "'NULL'",
+          "file_location" : "file_system",
+          "firstLineColumnNames" : " ",
+          "showCollType" : true,
+          "enableFlowAcpControl" : true,
+          "inputName" : "Link_1",
+          "showSortOptions" : true,
+          "append-overwrite" : "overwrite",
+          "rejects" : "continue",
+          "inputcolProperties" : [ {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "ID",
+            "TempOldColumnName" : "ID",
+            "ColumnName" : "ID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "BIT",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "ISDELETED",
+            "TempOldColumnName" : "ISDELETED",
+            "ColumnName" : "ISDELETED",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "BIT",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "MASTERRECORDID",
+            "TempOldColumnName" : "MASTERRECORDID",
+            "ColumnName" : "MASTERRECORDID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "NAME",
+            "TempOldColumnName" : "NAME",
+            "ColumnName" : "NAME",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "TYPE",
+            "TempOldColumnName" : "TYPE",
+            "ColumnName" : "TYPE",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "PARENTID",
+            "TempOldColumnName" : "PARENTID",
+            "ColumnName" : "PARENTID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGSTREET",
+            "TempOldColumnName" : "BILLINGSTREET",
+            "ColumnName" : "BILLINGSTREET",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGCITY",
+            "TempOldColumnName" : "BILLINGCITY",
+            "ColumnName" : "BILLINGCITY",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(80), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGSTATE",
+            "TempOldColumnName" : "BILLINGSTATE",
+            "ColumnName" : "BILLINGSTATE",
+            "Length" : 80,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(20), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGPOSTALCODE",
+            "TempOldColumnName" : "BILLINGPOSTALCODE",
+            "ColumnName" : "BILLINGPOSTALCODE",
+            "Length" : 20,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(80), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGCOUNTRY",
+            "TempOldColumnName" : "BILLINGCOUNTRY",
+            "ColumnName" : "BILLINGCOUNTRY",
+            "Length" : 80,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "DOUBLE, Null",
+            "Scale" : 15,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGLATITUDE",
+            "TempOldColumnName" : "BILLINGLATITUDE",
+            "ColumnName" : "BILLINGLATITUDE",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "DOUBLE",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "DOUBLE, Null",
+            "Scale" : 15,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGLONGITUDE",
+            "TempOldColumnName" : "BILLINGLONGITUDE",
+            "ColumnName" : "BILLINGLONGITUDE",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "DOUBLE",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "BILLINGGEOCODEACCURACY",
+            "TempOldColumnName" : "BILLINGGEOCODEACCURACY",
+            "ColumnName" : "BILLINGGEOCODEACCURACY",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGSTREET",
+            "TempOldColumnName" : "SHIPPINGSTREET",
+            "ColumnName" : "SHIPPINGSTREET",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGCITY",
+            "TempOldColumnName" : "SHIPPINGCITY",
+            "ColumnName" : "SHIPPINGCITY",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(80), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGSTATE",
+            "TempOldColumnName" : "SHIPPINGSTATE",
+            "ColumnName" : "SHIPPINGSTATE",
+            "Length" : 80,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(20), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGPOSTALCODE",
+            "TempOldColumnName" : "SHIPPINGPOSTALCODE",
+            "ColumnName" : "SHIPPINGPOSTALCODE",
+            "Length" : 20,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(80), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGCOUNTRY",
+            "TempOldColumnName" : "SHIPPINGCOUNTRY",
+            "ColumnName" : "SHIPPINGCOUNTRY",
+            "Length" : 80,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "DOUBLE, Null",
+            "Scale" : 15,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGLATITUDE",
+            "TempOldColumnName" : "SHIPPINGLATITUDE",
+            "ColumnName" : "SHIPPINGLATITUDE",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "DOUBLE",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "DOUBLE, Null",
+            "Scale" : 15,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGLONGITUDE",
+            "TempOldColumnName" : "SHIPPINGLONGITUDE",
+            "ColumnName" : "SHIPPINGLONGITUDE",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "DOUBLE",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SHIPPINGGEOCODEACCURACY",
+            "TempOldColumnName" : "SHIPPINGGEOCODEACCURACY",
+            "ColumnName" : "SHIPPINGGEOCODEACCURACY",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "PHONE",
+            "TempOldColumnName" : "PHONE",
+            "ColumnName" : "PHONE",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "FAX",
+            "TempOldColumnName" : "FAX",
+            "ColumnName" : "FAX",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "ACCOUNTNUMBER",
+            "TempOldColumnName" : "ACCOUNTNUMBER",
+            "ColumnName" : "ACCOUNTNUMBER",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "WEBSITE",
+            "TempOldColumnName" : "WEBSITE",
+            "ColumnName" : "WEBSITE",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "PHOTOURL",
+            "TempOldColumnName" : "PHOTOURL",
+            "ColumnName" : "PHOTOURL",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(20), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SIC",
+            "TempOldColumnName" : "SIC",
+            "ColumnName" : "SIC",
+            "Length" : 20,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "INDUSTRY",
+            "TempOldColumnName" : "INDUSTRY",
+            "ColumnName" : "INDUSTRY",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "DECIMAL(18), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "ANNUALREVENUE",
+            "TempOldColumnName" : "ANNUALREVENUE",
+            "ColumnName" : "ANNUALREVENUE",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "DECIMAL",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "INTEGER, Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "NUMBEROFEMPLOYEES",
+            "TempOldColumnName" : "NUMBEROFEMPLOYEES",
+            "ColumnName" : "NUMBEROFEMPLOYEES",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "INTEGER",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "OWNERSHIP",
+            "TempOldColumnName" : "OWNERSHIP",
+            "ColumnName" : "OWNERSHIP",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(20), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "TICKERSYMBOL",
+            "TempOldColumnName" : "TICKERSYMBOL",
+            "ColumnName" : "TICKERSYMBOL",
+            "Length" : 20,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "LONGVARCHAR(32000), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "DESCRIPTION",
+            "TempOldColumnName" : "DESCRIPTION",
+            "ColumnName" : "DESCRIPTION",
+            "Length" : 32000,
+            "MisFieldProperties" : "",
+            "DataType" : "LONGVARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "RATING",
+            "TempOldColumnName" : "RATING",
+            "ColumnName" : "RATING",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(80), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SITE",
+            "TempOldColumnName" : "SITE",
+            "ColumnName" : "SITE",
+            "Length" : 80,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "OWNERID",
+            "TempOldColumnName" : "OWNERID",
+            "ColumnName" : "OWNERID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "TIMESTAMP(19)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "CREATEDDATE",
+            "TempOldColumnName" : "CREATEDDATE",
+            "ColumnName" : "CREATEDDATE",
+            "Length" : 19,
+            "MisFieldProperties" : "",
+            "DataType" : "TIMESTAMP",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "CREATEDBYID",
+            "TempOldColumnName" : "CREATEDBYID",
+            "ColumnName" : "CREATEDBYID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "TIMESTAMP(19)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "LASTMODIFIEDDATE",
+            "TempOldColumnName" : "LASTMODIFIEDDATE",
+            "ColumnName" : "LASTMODIFIEDDATE",
+            "Length" : 19,
+            "MisFieldProperties" : "",
+            "DataType" : "TIMESTAMP",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "LASTMODIFIEDBYID",
+            "TempOldColumnName" : "LASTMODIFIEDBYID",
+            "ColumnName" : "LASTMODIFIEDBYID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "TIMESTAMP(19)",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SYSTEMMODSTAMP",
+            "TempOldColumnName" : "SYSTEMMODSTAMP",
+            "ColumnName" : "SYSTEMMODSTAMP",
+            "Length" : 19,
+            "MisFieldProperties" : "",
+            "DataType" : "TIMESTAMP",
+            "Key" : false,
+            "Nullable" : false
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "DATE, Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "LASTACTIVITYDATE",
+            "TempOldColumnName" : "LASTACTIVITYDATE",
+            "ColumnName" : "LASTACTIVITYDATE",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "DATE",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "TIMESTAMP(19), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "LASTVIEWEDDATE",
+            "TempOldColumnName" : "LASTVIEWEDDATE",
+            "ColumnName" : "LASTVIEWEDDATE",
+            "Length" : 19,
+            "MisFieldProperties" : "",
+            "DataType" : "TIMESTAMP",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "TIMESTAMP(19), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "LASTREFERENCEDDATE",
+            "TempOldColumnName" : "LASTREFERENCEDDATE",
+            "ColumnName" : "LASTREFERENCEDDATE",
+            "Length" : 19,
+            "MisFieldProperties" : "",
+            "DataType" : "TIMESTAMP",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(20), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "JIGSAW",
+            "TempOldColumnName" : "JIGSAW",
+            "ColumnName" : "JIGSAW",
+            "Length" : 20,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(20), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "JIGSAWCOMPANYID",
+            "TempOldColumnName" : "JIGSAWCOMPANYID",
+            "ColumnName" : "JIGSAWCOMPANYID",
+            "Length" : 20,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(40), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "CLEANSTATUS",
+            "TempOldColumnName" : "CLEANSTATUS",
+            "ColumnName" : "CLEANSTATUS",
+            "Length" : 40,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "ACCOUNTSOURCE",
+            "TempOldColumnName" : "ACCOUNTSOURCE",
+            "ColumnName" : "ACCOUNTSOURCE",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(9), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "DUNSNUMBER",
+            "TempOldColumnName" : "DUNSNUMBER",
+            "ColumnName" : "DUNSNUMBER",
+            "Length" : 9,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "TRADESTYLE",
+            "TempOldColumnName" : "TRADESTYLE",
+            "ColumnName" : "TRADESTYLE",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(8), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "NAICSCODE",
+            "TempOldColumnName" : "NAICSCODE",
+            "ColumnName" : "NAICSCODE",
+            "Length" : 8,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(120), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "NAICSDESC",
+            "TempOldColumnName" : "NAICSDESC",
+            "ColumnName" : "NAICSDESC",
+            "Length" : 120,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(4), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "YEARSTARTED",
+            "TempOldColumnName" : "YEARSTARTED",
+            "ColumnName" : "YEARSTARTED",
+            "Length" : 4,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(80), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SICDESC",
+            "TempOldColumnName" : "SICDESC",
+            "ColumnName" : "SICDESC",
+            "Length" : 80,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(18), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "DANDBCOMPANYID",
+            "TempOldColumnName" : "DANDBCOMPANYID",
+            "ColumnName" : "DANDBCOMPANYID",
+            "Length" : 18,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "CUSTOMERPRIORITY",
+            "TempOldColumnName" : "CUSTOMERPRIORITY",
+            "ColumnName" : "CUSTOMERPRIORITY",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SLA",
+            "TempOldColumnName" : "SLA",
+            "ColumnName" : "SLA",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "ACTIVE",
+            "TempOldColumnName" : "ACTIVE",
+            "ColumnName" : "ACTIVE",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : true,
+            "Metadata" : "INTEGER, Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "NUMBEROFLOCATIONS",
+            "TempOldColumnName" : "NUMBEROFLOCATIONS",
+            "ColumnName" : "NUMBEROFLOCATIONS",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "INTEGER",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(255), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "UPSELLOPPORTUNITY",
+            "TempOldColumnName" : "UPSELLOPPORTUNITY",
+            "ColumnName" : "UPSELLOPPORTUNITY",
+            "Length" : 255,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(10), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SLASERIALNUMBER",
+            "TempOldColumnName" : "SLASERIALNUMBER",
+            "ColumnName" : "SLASERIALNUMBER",
+            "Length" : 10,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "DATE, Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SLAEXPIRATIONDATE",
+            "TempOldColumnName" : "SLAEXPIRATIONDATE",
+            "ColumnName" : "SLAEXPIRATIONDATE",
+            "Length" : "–",
+            "MisFieldProperties" : "",
+            "DataType" : "DATE",
+            "Key" : false,
+            "Nullable" : true
+          }, {
+            "Unicode" : false,
+            "Description" : " ",
+            "Signed" : false,
+            "Metadata" : "VARCHAR(25), Null",
+            "Scale" : 0,
+            "TimeScale" : 0,
+            "OldColumnName" : "SEGMENT",
+            "TempOldColumnName" : "SEGMENT",
+            "ColumnName" : "SEGMENT",
+            "Length" : 25,
+            "MisFieldProperties" : "",
+            "DataType" : "VARCHAR",
+            "Key" : false,
+            "Nullable" : true
+          } ],
+          "file" : [ "SFFile.csv" ],
+          "quote" : "double",
+          "connection_asset_id" : "",
+          "writemethod" : " ",
+          "nocleanup" : " ",
+          "file_format" : "sequential",
+          "registerDataAsset" : false,
+          "delim" : "','"
+        }
+      } ],
+      "id" : "265e2ef3-780e-49de-bc7c-4e94b8c02c6a",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxSequentialFile.svg",
+          "x_pos" : 728.64,
+          "label" : "Sequential_file_1",
+          "y_pos" : 253.44
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "output_count" : 0,
+        "nls_map_name" : "UTF-8",
+        "input_count" : 1,
+        "execmode" : "default_seq"
+      }
+    } ],
+    "description" : "",
+    "id" : "17ec76f6-8dc0-479c-98df-4416c8f673ae",
+    "app_data" : {
+      "datastage" : {
+        "nls_map_name" : "",
+        "nls_locale" : "OFF"
+      },
+      "ui_data" : {
+        "comments" : [ ]
+      }
+    },
+    "runtime_ref" : "pxOsh"
+  } ],
+  "external_paramsets" : [ ],
+  "json_schema" : "https://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "schemas" : [ {
+    "id" : "42dfd669-23a9-4fc9-a05b-95d43c90ebcb",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "ID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "ISDELETED",
+      "type" : "BIT",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "BIT",
+        "is_unicode_string" : false,
+        "type_code" : "BOOLEAN"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "MASTERRECORDID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "NAME",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "TYPE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "PARENTID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "BILLINGSTREET",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "BILLINGCITY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 80,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 80,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "BILLINGSTATE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 20,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 20,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "BILLINGPOSTALCODE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 80,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 80,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "BILLINGCOUNTRY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 15,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "BILLINGLATITUDE",
+      "type" : "DOUBLE",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DOUBLE",
+        "is_unicode_string" : false,
+        "type_code" : "DFLOAT"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 15,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "BILLINGLONGITUDE",
+      "type" : "DOUBLE",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DOUBLE",
+        "is_unicode_string" : false,
+        "type_code" : "DFLOAT"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "BILLINGGEOCODEACCURACY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGSTREET",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGCITY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 80,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 80,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGSTATE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 20,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 20,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGPOSTALCODE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 80,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 80,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGCOUNTRY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 15,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGLATITUDE",
+      "type" : "DOUBLE",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DOUBLE",
+        "is_unicode_string" : false,
+        "type_code" : "DFLOAT"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 15,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGLONGITUDE",
+      "type" : "DOUBLE",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DOUBLE",
+        "is_unicode_string" : false,
+        "type_code" : "DFLOAT"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SHIPPINGGEOCODEACCURACY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "PHONE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "FAX",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "ACCOUNTNUMBER",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "WEBSITE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "PHOTOURL",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 20,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 20,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SIC",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "INDUSTRY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 18,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "ANNUALREVENUE",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DECIMAL",
+        "is_unicode_string" : false,
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "NUMBEROFEMPLOYEES",
+      "type" : "INTEGER",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "is_unicode_string" : false,
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "OWNERSHIP",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 20,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 20,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "TICKERSYMBOL",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 32000,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 32000,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "DESCRIPTION",
+      "type" : "LONGVARCHAR",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "RATING",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 80,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 80,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SITE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "OWNERID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 19,
+        "decimal_scale" : 0,
+        "decimal_precision" : 19,
+        "description" : " ",
+        "max_length" : 19,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "CREATEDDATE",
+      "type" : "TIMESTAMP",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "TIMESTAMP",
+        "is_unicode_string" : false,
+        "type_code" : "DATETIME"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "CREATEDBYID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 19,
+        "decimal_scale" : 0,
+        "decimal_precision" : 19,
+        "description" : " ",
+        "max_length" : 19,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "LASTMODIFIEDDATE",
+      "type" : "TIMESTAMP",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "TIMESTAMP",
+        "is_unicode_string" : false,
+        "type_code" : "DATETIME"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "LASTMODIFIEDBYID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 19,
+        "decimal_scale" : 0,
+        "decimal_precision" : 19,
+        "description" : " ",
+        "max_length" : 19,
+        "is_signed" : false
+      },
+      "nullable" : false,
+      "name" : "SYSTEMMODSTAMP",
+      "type" : "TIMESTAMP",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "TIMESTAMP",
+        "is_unicode_string" : false,
+        "type_code" : "DATETIME"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "LASTACTIVITYDATE",
+      "type" : "DATE",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DATE",
+        "is_unicode_string" : false,
+        "type_code" : "DATE"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 19,
+        "decimal_scale" : 0,
+        "decimal_precision" : 19,
+        "description" : " ",
+        "max_length" : 19,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "LASTVIEWEDDATE",
+      "type" : "TIMESTAMP",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "TIMESTAMP",
+        "is_unicode_string" : false,
+        "type_code" : "DATETIME"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 19,
+        "decimal_scale" : 0,
+        "decimal_precision" : 19,
+        "description" : " ",
+        "max_length" : 19,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "LASTREFERENCEDDATE",
+      "type" : "TIMESTAMP",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "TIMESTAMP",
+        "is_unicode_string" : false,
+        "type_code" : "DATETIME"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 20,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 20,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "JIGSAW",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 20,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 20,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "JIGSAWCOMPANYID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 40,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 40,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "CLEANSTATUS",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "ACCOUNTSOURCE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 9,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 9,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "DUNSNUMBER",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "TRADESTYLE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 8,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 8,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "NAICSCODE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 120,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 120,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "NAICSDESC",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 4,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 4,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "YEARSTARTED",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 80,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 80,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SICDESC",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 18,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 18,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "DANDBCOMPANYID",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "CUSTOMERPRIORITY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SLA",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "ACTIVE",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : true,
+      "name" : "NUMBEROFLOCATIONS",
+      "type" : "INTEGER",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "is_unicode_string" : false,
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 255,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 255,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "UPSELLOPPORTUNITY",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 10,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 10,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SLASERIALNUMBER",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 6,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SLAEXPIRATIONDATE",
+      "type" : "DATE",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "DATE",
+        "is_unicode_string" : false,
+        "type_code" : "DATE"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 25,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : " ",
+        "max_length" : 25,
+        "is_signed" : false
+      },
+      "nullable" : true,
+      "name" : "SEGMENT",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      }
+    } ]
+  } ],
+  "doc_type" : "pipeline",
+  "id" : "d8244410-3dbc-4648-bc65-cbc728b14113",
+  "app_data" : {
+    "datastage" : {
+      "timestamp_format" : "",
+      "decimal_separator" : "",
+      "flowRunPriorityQueue" : "Medium",
+      "time_format" : "",
+      "date_format" : "",
+      "message_handlers" : [ ],
+      "version" : "3.0.5"
+    },
+    "additionalProperties" : {
+      "transInputLinkMapper" : { },
+      "ELTDropdown" : {
+        "id" : "nesting",
+        "label" : "Generate nested SQL",
+        "value" : "NESTED_QUERY"
+      },
+      "disableParamsCacheOnFlow" : false,
+      "rcpLinkList" : [ ],
+      "globalAcp" : true,
+      "enableRCP" : false,
+      "isNewTransActive" : false,
+      "enableSchemaLessDesign" : false,
+      "runMode" : "ETL"
+    }
+  },
+  "version" : "3.0",
+  "parameters" : {
+    "local_parameters" : [ ]
+  }
+}

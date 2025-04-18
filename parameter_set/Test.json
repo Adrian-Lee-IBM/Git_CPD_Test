@@ -1,0 +1,14 @@
+{
+  "parameter_set" : {
+    "name" : "Test",
+    "description" : "",
+    "parameters" : [ {
+      "name" : "JDBC_JAR",
+      "description" : "",
+      "prompt" : "",
+      "type" : "enum",
+      "value" : ""
+    } ],
+    "value_sets" : [ ]
+  }
+}

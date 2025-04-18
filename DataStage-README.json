@@ -1,0 +1,114 @@
+{
+  "project" : "Adrian - Test",
+  "projectId" : "67916788-7232-4d04-aae3-6a877db7ed89",
+  "created_by" : "cpadmin",
+  "environment" : "cp4d",
+  "services_info" : [ {
+    "name" : "ds-canvas",
+    "version" : "512.0.14"
+  }, {
+    "name" : "ds-cas-lite",
+    "version" : "512.0.3"
+  }, {
+    "name" : "ds-codegen",
+    "version" : "512.0.8"
+  }, {
+    "name" : "ds-flow-runtime",
+    "version" : "512.0.2"
+  }, {
+    "name" : "ds-flows",
+    "version" : "512.0.8"
+  }, {
+    "name" : "ds-migration",
+    "version" : "512.0.6"
+  }, {
+    "name" : "ds-px-runtime",
+    "version" : "512.0.8"
+  }, {
+    "name" : "DSAssets",
+    "version" : "512.0.3"
+  }, {
+    "name" : "qs-ruleset",
+    "version" : "512.0.2"
+  } ],
+  "assets" : [ {
+    "name" : "Test Pipeline in Folder",
+    "type" : "orchestration_flow"
+  }, {
+    "name" : "Test Flow",
+    "type" : "px_executables",
+    "location" : "Test Flow"
+  }, {
+    "name" : "Test Microsoft SQL Server",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "default_datastage_px",
+    "type" : "environment"
+  }, {
+    "name" : "Db2 Test",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "JDBC Test Connection",
+    "type" : "connection"
+  }, {
+    "name" : "JDBC Test",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "Test Case",
+    "type" : "data_intg_test_case"
+  }, {
+    "name" : "Test Flow",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "SF Unit Test",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "Db2 Test.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "Example Name",
+    "type" : "orchestration_flow"
+  }, {
+    "name" : "Test Storage Volume for Unit Testing",
+    "type" : "connection"
+  }, {
+    "name" : "JDBC_Project_Level_Param",
+    "type" : "parameter_set"
+  }, {
+    "name" : "Example Name Two",
+    "type" : "orchestration_flow"
+  }, {
+    "name" : "Test Flow.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "67916788-7232-4d04-aae3-6a877db7ed89-DataStage_settings",
+    "type" : "data_intg_project_settings"
+  }, {
+    "name" : "Db2 Test",
+    "type" : "px_executables",
+    "location" : "Db2 Test"
+  }, {
+    "name" : "SF Test",
+    "type" : "connection"
+  }, {
+    "name" : "WF360_Dynamic",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "SF Unit Test.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "DB2 Connection",
+    "type" : "connection"
+  }, {
+    "name" : "Test",
+    "type" : "parameter_set"
+  }, {
+    "name" : "WF360_Dynamic.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "SF Unit Test",
+    "type" : "px_executables",
+    "location" : "SF Unit Test"
+  } ],
+  "flow_job_mapping" : [ ]
+}

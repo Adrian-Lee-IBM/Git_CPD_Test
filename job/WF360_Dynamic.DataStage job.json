@@ -1,0 +1,46 @@
+{
+  "metadata" : {
+    "name" : "WF360_Dynamic.DataStage job",
+    "asset_id" : "52cceda5-d7a3-4c9c-8ba4-53901fe55082",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref_type" : "data_intg_flow",
+      "configuration" : {
+        "env_type" : "data_intg_flow",
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "env_variables" : [ ],
+        "runPriorityQueue" : "Medium"
+      },
+      "last_run_initiator" : "deprecated field",
+      "last_run_time" : "deprecated field",
+      "last_run_status" : "deprecated field",
+      "last_run_status_timestamp" : 0,
+      "future_scheduled_runs" : [ ],
+      "enable_notifications" : true,
+      "retention_policy" : { },
+      "project_name" : "Adrian - Test",
+      "asset_ref" : "d52343bc-3083-4093-807b-774237bac302",
+      "job_parameters" : [ {
+        "name" : "WF360Query",
+        "value" : "SELECT  WF.DEPARTMENT\t\t\t\t\t\tAS BP_Department__c, WF.CNUM\t\t\t\t\t\t\t\tAS CNUM__c, WF.COUNTRY_CODE\t\t\t\t\t\tAS Country_Code__c, WF.LOCAL_ACCOUNTING_DIVISION        AS Division__c, WF.EMPLOYMENT_STATUS_CODE\t\t\tAS Employee_Status_Code__c, TP.LONG_DESCRIPTION                 AS Employee_Type__c, WF.GEO_CODE\t\t\t\t\t\t\tAS Geography_Id__c, WF.HIRE_DATE\t\t\t\t\t\tAS Hire_Date__c, WF.MANAGER_INDICATOR\t\t\t\tAS Is_Manager__c, WF.TECHNICAL_JOB_ROLE_INDICATOR\t    AS Is_Technical_Job_Role__c, WF.JOB_FAMILY_CODE\t\t\t\t\tAS Job_Family_Code__c, FAM.JOB_FAMILY_DESC\t\t\t\t\tAS Job_Family_Description__c,  WF.LOSS_MOVEMENT_CODE\t\t\t\tAS Loss_Movement_Code__c, WF.ACCOUNT_MAJOR\t\t\t\t\tAS Major__c, WF.PMR\t\t\t\t\t\t\t\tAS PMR__c, WF.POSITION_CODE\t\t\t\t\tAS Position_Code__c, WF.POSITION_TITLE\t\t\t\t\tAS Position_Title__c, WF.PREVIOUS_EMPLOYER_CODE\t\t\tAS Previous_Employer_Code__c, WF.PRIMARY_JOB_CATEGORY_CODE\t\tAS Primary_Job_Category_Code__c, CAT.PRIMARY_JOB_CATEGORY_NAME       AS Primary_Job_Category_Name__c, WF.BAND_CODE\t\t\t\t\t\tAS Salary_Band_Code__c, WF.SEPARATION_DATE\t\t\t\t\tAS Separati"
+      }, {
+        "name" : "PECQuery",
+        "value" : "SELECT Acquisition__c, Text_1__c FROM APD_Manual_Data__c WHERE Group__c = 'PEC' AND Text_1__c != '' AND Acquisition__c = '7Summits'"
+      }, {
+        "name" : "DeptCodeQuery",
+        "value" : "SELECT Acquisition__c, Text_1__c FROM APD_Manual_Data__c WHERE Group__c = 'HR Department Codes' AND Text_1__c != '' AND Acquisition__c = '7Summits'"
+      }, {
+        "name" : "Acquisition",
+        "value" : "7Summits"
+      } ],
+      "schedule_id" : "",
+      "schedule_creator_id" : "",
+      "flow_name" : "WF360_Dynamic"
+    }
+  }
+}

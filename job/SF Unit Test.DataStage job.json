@@ -1,0 +1,33 @@
+{
+  "metadata" : {
+    "name" : "SF Unit Test.DataStage job",
+    "asset_id" : "92b6ea74-572c-4e77-bac8-cfce7edfc37e",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref_type" : "data_intg_flow",
+      "configuration" : {
+        "env_id" : "242a20ad-9117-4b84-8a53-a112c4b60b37",
+        "env_type" : "datastage",
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "env_variables" : [ ],
+        "runPriorityQueue" : "Medium"
+      },
+      "last_run_initiator" : "deprecated field",
+      "last_run_time" : "deprecated field",
+      "last_run_status" : "deprecated field",
+      "last_run_status_timestamp" : 0,
+      "future_scheduled_runs" : [ ],
+      "enable_notifications" : true,
+      "project_name" : "Adrian - Test",
+      "asset_ref" : "60fc6aa2-25f7-427e-8ebd-bab73f3dc835",
+      "schedule_id" : "",
+      "schedule_creator_id" : "",
+      "flow_name" : "SF Unit Test"
+    }
+  }
+}
